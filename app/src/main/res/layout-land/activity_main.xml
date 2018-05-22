@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/score_keeper">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/teamNameStyle"
+                    android:text="@string/team_humans"
+                    android:textColor="@color/team_h_color" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/scoreStyle" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addSixForTeamA"
+                    android:text="@string/touchdown"
+                    android:theme="@style/humansButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/field_goal"
+                    android:theme="@style/humansButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addTwoForTeamA"
+                    android:text="@string/conversion_safety"
+                    android:theme="@style/humansButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/extra_point"
+                    android:theme="@style/humansButtonsColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/teamNameStyle"
+                    android:text="@string/team_zombies"
+                    android:textColor="@color/team_z_color" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/scoreStyle" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addSixForTeamB"
+                    android:text="@string/touchdown"
+                    android:theme="@style/zombiesButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addThreeForTeamB"
+                    android:text="@string/field_goal"
+                    android:theme="@style/zombiesButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addTwoForTeamB"
+                    android:text="@string/conversion_safety"
+                    android:theme="@style/zombiesButtonsColor" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/extra_point"
+                    android:theme="@style/zombiesButtonsColor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_below="@id/score_keeper"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+    </RelativeLayout>
+
+</ScrollView>

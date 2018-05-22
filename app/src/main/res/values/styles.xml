@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#795548</item>
+        <item name="colorButtonNormal">#A1887F</item>
+    </style>
+
+    <!-- Team name theme. -->
+    <style name="teamNameStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_top</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/skranji_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <!-- Score display theme. -->
+    <style name="scoreStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom</item>
+        <item name="android:text">@string/starting_score</item>
+        <item name="android:textColor">@color/score_color</item>
+        <item name="android:textSize">@dimen/score_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Background color of buttons in left-hand column of app. -->
+    <style name="humansButtonsColor" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">#F57C00</item>
+    </style>
+
+    <!-- Background color of buttons in right-hand column of app. -->
+    <style name="zombiesButtonsColor" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">#388E3C</item>
+    </style>
+
+    <!-- Buttons theme. -->
+    <style name="buttonStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/margin_sides</item>
+        <item name="android:layout_marginRight">@dimen/margin_sides</item>
+    </style>
+
+</resources>
